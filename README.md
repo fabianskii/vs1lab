@@ -37,7 +37,7 @@ In der ersten Aufgabe soll die Struktur der GT-App als HTML Seite entstehen.
 
 Für die Seite existiert schon ein Template auf github: [https://github.com/zirpins/vs1lab](https://github.com/zirpins/vs1lab).
 1. Laden Sie das Template von **github** herunter.
-2. Öffnen Sie `Aufgabe1_html/index.html` das Template in ihrem **Editor** und in Ihrem **Browser**.
+2. Öffnen Sie `Aufgabe1_html/index.html` in ihrem **Editor** und in Ihrem **Browser**.
 
 ### 1.2. Teilaufgaben
 
