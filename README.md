@@ -31,7 +31,7 @@ In der ersten Aufgabe soll die Struktur der GT-App als HTML Seite entstehen.
 
 - Die App soll alle Funktionen auf einer Seite kombinieren (**Single Page App**) und sich in **Header-** **Main-** und **Footer-Bereich** gliedern. Im Hauptteil soll ein **Tagging Widget** und ein **Discovery Widget** enthalten sein. 
 - Das Tagging Widget fragt über ein	**Formular** die `latitude`, `longitude`, `name` und `hashtag` eines neuen GeoTags ab.
-- Das Discovery Widget zeigt auf einer **Liste** und einer **Karte** die GeoTags der Umgebung an. Über ein **Formular** kann ein `searchterm` eingegeben werden.
+- Das Discovery Widget zeigt auf einer **Liste** und einer **Karte** die GeoTags der Umgebung an. Über ein **Formular** kann ein `searchterm` eingegeben werden, um die Locations zu filtern.
 
 ### 1.1. Vorbereitung
 
