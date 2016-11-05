@@ -2,8 +2,6 @@
 
 Ziel des Labors ist die praktische Anwendung verschiedener Web Technologien aus der Vorlesung. Dazu wird in mehreren Schritten eine komplette Web Anwendung erstellt. In jedem Schritt wird jeweils eine Technik genauer betrachtet.
 
-{{TOC}}
-
 ## Die Geo Tagging App (GTA)
 
 Die *Geo Tagging App (GTA)* verwaltet *GeoTags* (= Locations mit Hashtags). Dies beinhaltet *Tagging* und *Discovery* von GeoTags. 
@@ -32,7 +30,7 @@ Alle Komponenten sind auf den Poolrechnern (LI 137) vorhanden.
 In der ersten Aufgabe soll die Struktur der GT-App als HTML Seite entstehen. 
 
 - Die App soll alle Funktionen auf einer Seite kombinieren (**Single Page App**) und sich in **Header-** **Main-** und **Footer-Bereich** gliedern. Im Hauptteil soll ein **Tagging Widget** und ein **Discovery Widget** enthalten sein. 
-- Das Tagging Widget fragt über ein	**Formular** die `latitude`, `longitude`, `name` und `hashtag` eines neuen GoTags ab.
+- Das Tagging Widget fragt über ein	**Formular** die `latitude`, `longitude`, `name` und `hashtag` eines neuen GeoTags ab.
 - Das Discovery Widget zeigt auf einer **Liste** und einer **Karte** die GeoTags der Umgebung an. Über ein **Formular** kann ein `searchterm` eingegeben werden.
 
 ### 1.1. Vorbereitung
