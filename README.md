@@ -45,11 +45,10 @@ Für die Seite existiert schon ein Template auf github: [https://github.com/zirp
 
 #### Formularstruktur
 Im Template fehlen die Formulare. Diese sollen nun erstellt werden.
-- Ergänzen Sie provisorische `action` und `method` Attribute.
-- Ergänzen Sie geeignete `Input` Elemente im Tagging-Formular und im Discovery-Formular. 
-- Vergeben sie eindeutige `id` Attribute für die Felder, um sie später über JavaScript finden zu können.
+- Ergänzen Sie geeignete `Input` Elemente im Tagging-Formular und im Discovery-Formular.
+- Vergeben sie eindeutige `id` Attribute für die Felder, um sie später in JavaScript finden zu können.
 - Deklarieren Sie für alle Felder jeweils ein `label`.
-- Verwenden Sie `formgroup` und `legend` Tags zur Begrenzung des Formulars.
+- Verwenden Sie `formgroup` und `legend` zur Begrenzung des Formulars.
 - Deklarieren Sie einen `button` mit id `update` im Tagging-Widget, der später die Koordinaten aktualisieren soll. Dieser Knopf hat zunächst keine Funktion. 
 - Deklarieren Sie für jedes Formular einen `button` zum Submit.
 - Fügen Sie als Hilfe für die Benutzer Beispiel Platzhalter in die Felder ein.
