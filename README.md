@@ -2,9 +2,9 @@
 Ziel des Labors ist die praktische Anwendung verschiedener Web Technologien aus der Vorlesung. Dazu wird in mehreren Schritten eine komplette Web Anwendung erstellt. In jedem Schritt wird jeweils eine Technik genauer betrachtet.
 
 ## Die Geo Tagging App (GTA)
-Die *Geo Tagging App* verwaltet *GeoTags* (= Locations mit Hashtags). Dies beinhaltet *Tagging* und *Discovery* von GeoTags. 
+Die *Geo Tagging App* verwaltet *GeoTags* (= Locations mit Hashtags). Dies beinhaltet *Tagging* und *Discovery* von GeoTags.
 
-Über ein *Tagging Widget* (Formular) kann jederzeit der Name sowie ein Hashtag für den aktuellen Ort des Browsers (oder manuell eingegebene Koordinaten) registriert werden. 
+Über ein *Tagging Widget* (Formular) kann jederzeit der Name sowie ein Hashtag für den aktuellen Ort des Browsers (oder manuell eingegebene Koordinaten) registriert werden.
 
 In einer *Discovery Liste* werden die GeoTags der aktuellen Umgebung angezeigt. GeoTags der Umgebung können zudem über Name oder Hashtag gefiltert werden.
 
@@ -18,12 +18,12 @@ Auf ihrem Entwicklungsrechner brauchen sie zur Lösung der Aufgaben verschiedene
 Ab der dritten Aufgabe kommen folgende Frameworks hinzu:
 
 - [**Node.js Plattform**](https://nodejs.org) (inkl. npm)
-- [**Express Framework**](http://expressjs.com) (inkl. Express-Generator) 
+- [**Express Framework**](http://expressjs.com) (inkl. Express-Generator)
 
 Alle Komponenten sind auf den Poolrechnern (LI 137) vorhanden.
 
 ## 1.Aufgabe - Struktur einer Webanwendung mit HTML5 erstellen
-In der ersten Aufgabe soll die Struktur der GT-App als HTML-Seite entstehen. 
+In der ersten Aufgabe soll die Struktur der GT-App als HTML-Seite entstehen.
 
 - Die App soll alle Funktionen auf *einer* Seite kombinieren (**Single Page App**) und sich in **Header-** **Main-** und **Footer-Bereich** gliedern. Im Hauptteil soll ein **Tagging Widget** und ein **Discovery Widget** enthalten sein.
 - Das Tagging Widget fragt über ein	**Formular** die `latitude`, `longitude`, `name` und `hashtag` eines neuen GeoTags ab.
@@ -31,24 +31,24 @@ In der ersten Aufgabe soll die Struktur der GT-App als HTML-Seite entstehen.
 
 ### 1.1. Vorbereitung
 Für die Seite existiert schon ein Template auf github: [https://github.com/zirpins/vs1lab](https://github.com/zirpins/vs1lab).
-1. Laden Sie das Template von **github** herunter.
-2. Öffnen Sie `Aufgabe1_html/index.html` in ihrem **Editor** und in Ihrem **Browser**.
+1. Laden sie das Template von **github** herunter.
+2. Öffnen sie `Aufgabe1_html/index.html` in ihrem **Editor** und in Ihrem **Browser**.
 
 ### 1.2. Teilaufgaben
 #### Formularstruktur
 Im Template fehlen noch die Formulare. Diese sollen nun erstellt werden.
-- Ergänzen Sie geeignete `Input` Elemente im Tagging-Formular und im Discovery-Formular.
+- Ergänzen sie geeignete `Input` Elemente im Tagging-Formular und im Discovery-Formular.
 - Vergeben sie eindeutige `id` Attribute für die Felder, um sie später in JavaScript finden zu können.
-- Deklarieren Sie für alle Felder jeweils ein `label`.
-- Verwenden Sie `formgroup` und `legend` zur Begrenzung des Formulars.
-- Deklarieren Sie einen `button` mit  `id="update"` im Tagging-Widget, der später die Koordinaten aktualisieren soll. Dieser Knopf hat zunächst *keine* Funktion.
-- Deklarieren Sie für jedes Formular einen `button` zum Submit.
-- Fügen Sie als Hilfe für die Benutzer Beispiel Platzhalter in die Felder ein.
+- Deklarieren sie für alle Felder jeweils ein `label`.
+- Verwenden sie `formgroup` und `legend` zur Begrenzung des Formulars.
+- Deklarieren sie einen `button` mit  `id="update"` im Tagging-Widget, der später die Koordinaten aktualisieren soll. Dieser Knopf hat zunächst *keine* Funktion.
+- Deklarieren sie für jedes Formular einen `button` zum Submit.
+- Fügen sie als Hilfe für die Benutzer Beispiel Platzhalter in die Felder ein.
 
 #### Formularvalidierung
-Für die Formulare soll nun noch eine Validierung definiert werden. Diese Validierung soll nur HTML-Attribute verwenden. 
+Für die Formulare soll nun noch eine Validierung definiert werden. Diese Validierung soll nur HTML-Attribute verwenden.
 
-Setzen Sie folgende Regeln um:
+Setzen sie folgende Regeln um:
 - Alle Felder bis auf den Hashtag müssen in den Formularen ausgefüllt werden.
 - Namen dürfen 10 Buchstaben lang sein.
 - Hashtags müssen mit `#` beginnen und dürfen dann noch 10 Buchstaben haben.
@@ -60,8 +60,8 @@ Die Aufgabe vertieft die Programmierung von **Modulen** und **Callbacks** sowie 
 
 ### 2.1. Vorbereitung
 Für die Seite existiert schon ein Template auf github: [https://github.com/zirpins/vs1lab](https://github.com/zirpins/vs1lab).
-1. Öffnen Sie `Aufgabe2_javascript/index-a2.html` in ihrem Editor und in Ihrem Browser. Übernehmen Sie hier ihre Lösung von Aufgabe1 (nur die Formulare; die `<script>` Tags müssen erhalten bleiben).
-2. Öffnen Sie `Aufgabe2_javascript/script-a2.js` in ihrem Editor.
+1. Öffnen sie `Aufgabe2_javascript/index-a2.html` in ihrem Editor und in Ihrem Browser. Übernehmen sie hier ihre Lösung von Aufgabe1 (nur die Formulare; die `<script>` Tags müssen erhalten bleiben).
+2. Öffnen sie `Aufgabe2_javascript/script-a2.js` in ihrem Editor.
 
 ### 2.2. Teilaufgaben
 #### Koordinaten in das Formular eintragen
@@ -69,17 +69,17 @@ Das JavaScript enthält ein Modul `gtaLocator` mit Funktionen zur Abfrage der Ge
 
 Die Funktion `tryLocate` nimmt als Parameter zwei Callback Funktionen an, die bei Erfolg mit der Position oder bei Fehler mit einer Meldung 'zurückgerufen' werden. Zur Verwendung der Funktion müssen beide Callback Funktionen übergeben werden.
 
-Fügen Sie eine _öffentliche_ Funktion `updateLocation` zum Modul `gtaLocator` hinzu, die folgendes tut:
+Fügen sie eine _öffentliche_ Funktion `updateLocation` zum Modul `gtaLocator` hinzu, die folgendes tut:
 - Auslesen der Position mit `tryLocate`
 - Im Erfolgsfall `latitude` und `longitude` Felder des Tagging-Formulars suchen und in deren `value` Attribute Koordinaten schreiben.
 - Im Fehlerfall ein `aler` öffnen und Fehlernachricht ausgeben.
 
-Registrieren Sie nach dem Laden des Dokuments einen Event Listener für den `update` Button des Tagging-Formulars, der wiederum als Callback `updateLocation` aufruft.
+Registrieren sie nach dem Laden des Dokuments einen Event Listener für den `update` Button des Tagging-Formulars, der wiederum als Callback `updateLocation` aufruft.
 
 #### Karte aktualisieren (optional)
-Um die Karte zu aktualisieren, benötigen Sie einen API Schlüssel für die [Google Static Maps API](https://developers.google.com/maps/documentation/static-maps/) (kostenlos). Besorgen Sie sich einen Key und tragen Sie diesen im `gtaLocator` Modul im privaten Feld `apikey` ein.
+Um die Karte zu aktualisieren, benötigen sie einen API Schlüssel für die [Google Static Maps API](https://developers.google.com/maps/documentation/static-maps/) (kostenlos). Besorgen sie sich einen Key und tragen sie diesen im `gtaLocator` Modul im privaten Feld `apikey` ein.
 
-Ergänzen Sie `updateLocation` wie folgt:
+Ergänzen sie `updateLocation` wie folgt:
 - Rufen sie die Funktion `getLocationMapSrc` auf. Das Ergebnis ist eine URL, mit der man die Karte als Bild laden kann.
 - Suchen sie das Image Element auf der Webseite.
 - Ändern sie das `src` Attribut auf die neue URL.
