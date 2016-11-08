@@ -40,7 +40,7 @@ Im Template fehlen noch die Formulare. Diese sollen nun erstellt werden.
 - Ergänzen sie geeignete `Input` Elemente im Tagging-Formular und im Discovery-Formular.
 - Vergeben sie eindeutige `id` Attribute für die Felder, um sie später in JavaScript finden zu können.
 - Deklarieren sie für alle Felder jeweils ein `label`.
-- Verwenden sie `formgroup` und `legend` zur Begrenzung des Formulars.
+- Verwenden sie `fieldset` und `legend` zur Begrenzung des Formulars.
 - Deklarieren sie einen `button` mit  `id="update"` im Tagging-Widget, der später die Koordinaten aktualisieren soll. Dieser Knopf hat zunächst *keine* Funktion.
 - Deklarieren sie für jedes Formular einen `button` zum Submit.
 - Fügen sie als Hilfe für die Benutzer Beispiel Platzhalter in die Felder ein.
