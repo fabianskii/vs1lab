@@ -1,8 +1,17 @@
 /* Dieses Skript wird ausgeführt, wenn der Browser index-a2.html lädt. */
+
+// Befehle werden sequenziell abgearbeitet ...
+
+/** 
+ * "console.log" schreibt auf die Konsole des Browsers
+ * Das Konsolenfenster muss im Browser explizit geöffnet werden.
+ */
 console.log("The script is going to start...");
 
+// Es folgen einige Deklarationen, die aber noch nicht ausgeführt werden ...
+
 /**
- * GeoTagApp Locator and Mapper Module
+ * GeoTagApp Locator Modul
  */
 var gtaLocator = (function GtaLocator() {
     // private members
@@ -59,11 +68,21 @@ var gtaLocator = (function GtaLocator() {
             "&key=" + apikey;
     };
 
+    // public members
     return {
-        // public members
+        readme : "Dieses Objekt enthält 'öffentliche' Teile des Moduls.",
+        updateLocation : function() { 
+            // Hier Inhalt der Funktion "updateLocation" ergänzen
+        }
     }
 })();
 
+/**
+ * $(document).ready wartet, bis die Seite komplett geladen wurde. Dann wird die 
+ * angegebene Funktion aufgerufen. An dieser Stelle beginnt die eigentliche Arbeit
+ * des Skripts.
+ */
 $(document).ready(function () {
     alert("Hello World")
+    // Hier Event Listener für Button Click registrieren
 });
